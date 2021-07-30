@@ -17,7 +17,7 @@ jobs:
       uses: azure/policy-compliance-scan@v0
       with:
         scopes: |
-          /subscriptions/ae59a387-ed05-4e24-a000-d3492f884547
+          /subscriptions/ae59a387-ed05-4e24-a000-d3492f884547resourceGroups/GitHubActionsSeries
 
       # Deploy ARM template
     - name: Run ARM deploy
