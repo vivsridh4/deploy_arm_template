@@ -12,12 +12,6 @@ jobs:
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    
-    - name: Check for resource compliance
-      uses: azure/policy-compliance-scan@v0
-      with:
-        scopes: |
-          /subscriptions/${{ secrets.SUB_ID }}/resourceGroups/GitHubActionsSeries
 
       # Deploy ARM template
     - name: Run ARM deploy
@@ -28,5 +22,4 @@ jobs:
         template: ./azuredeploy.json
         parameters: storageAccountType=Standard_LRS
 
-      # output containerName variable from template
-    - run: echo ${{ steps.deploy.outputs.containerName }}
+    
