@@ -30,5 +30,4 @@ jobs:
       uses: azure/manage-azure-policy@v0
       with:
         paths: |
-          policies/Subscriptions_should_have_a_contact_email_address_for_security_issues_4f4f78b8-e367-4b10-a341-d9a4ad5cf1c7/**
-          policies/There_should_be_more_than_one_owner_assigned_to_your_subscription_09024ccc-0c5f-475e-9457-b7c0d9ed487b/**
+          policies/**
