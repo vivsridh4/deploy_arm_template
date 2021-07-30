@@ -30,4 +30,4 @@ jobs:
       uses: azure/manage-azure-policy@v0
       with:
         paths: |
-          policies/Subscriptions_should_have_a_contact_email_address_for_security_issues_4f4f78b8-e367-4b10-a341-d9a4ad5cf1c7/**
+          policies/policy.json
